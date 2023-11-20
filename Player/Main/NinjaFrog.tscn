@@ -1,0 +1,439 @@
+[gd_scene load_steps=45 format=3 uid="uid://dll5uaelbidh4"]
+
+[ext_resource type="Script" path="res://Player/Main/NinjaFrog.cs" id="1_kql5y"]
+[ext_resource type="Texture2D" uid="uid://bysynwxk8llf6" path="res://Main Characters/Ninja Frog/Double Jump (32x32).png" id="2_6bp2i"]
+[ext_resource type="Texture2D" uid="uid://cwko207bt4ps3" path="res://Main Characters/Ninja Frog/Fall (32x32).png" id="3_1guh8"]
+[ext_resource type="Texture2D" uid="uid://bpeue11gf4lnw" path="res://Main Characters/Ninja Frog/Idle (32x32).png" id="4_ncdan"]
+[ext_resource type="Texture2D" uid="uid://dslsb2br21wef" path="res://Main Characters/Ninja Frog/Jump (32x32).png" id="5_v2f18"]
+[ext_resource type="Texture2D" uid="uid://duhq30qj7i0en" path="res://Main Characters/Ninja Frog/Run (32x32).png" id="6_cup8n"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_imamc"]
+height = 32.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amwof"]
+atlas = ExtResource("2_6bp2i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nf1dt"]
+atlas = ExtResource("2_6bp2i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ma4"]
+atlas = ExtResource("2_6bp2i")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05ph5"]
+atlas = ExtResource("2_6bp2i")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyvjl"]
+atlas = ExtResource("2_6bp2i")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fe8j7"]
+atlas = ExtResource("2_6bp2i")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3qfg5"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6ioi"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hklea"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb0y0"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhqtm"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26t70"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mg81q"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ulwv"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqwwm"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dq165"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fot8e"]
+atlas = ExtResource("4_ncdan")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggsct"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a401j"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xykox"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5aylk"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gh238"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulfpd"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svo74"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svcgu"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7efb"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74gl0"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4om0v"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jqpv"]
+atlas = ExtResource("6_cup8n")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1vs38"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_amwof")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nf1dt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1ma4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05ph5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyvjl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fe8j7")
+}],
+"loop": true,
+"name": &"DoubleJump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1guh8")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3qfg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6ioi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hklea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bb0y0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhqtm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26t70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mg81q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ulwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqwwm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dq165")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fot8e")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_v2f18")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ggsct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a401j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xykox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5aylk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gh238")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulfpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svo74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svcgu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7efb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74gl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4om0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jqpv")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="CSharpScript" id="CSharpScript_tgkbx"]
+script/source = " using Godot;
+using System;
+
+public partial class NinjaFrogPlayer : AnimatedSprite2D
+{
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+	}
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+	}
+}
+"
+
+[sub_resource type="Animation" id="Animation_ir2o7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Fall"]
+}
+
+[sub_resource type="Animation" id="Animation_jxebj"]
+resource_name = "ninja_frog_fall_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Fall"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_clh64"]
+resource_name = "ninja_frog_idle_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+}
+
+[sub_resource type="Animation" id="Animation_udfl4"]
+resource_name = "ninja_frog_jump_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Jump"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_4qwmj"]
+resource_name = "ninja_frog_run_animation"
+length = 1.05
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Run"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3gg6p"]
+_data = {
+"RESET": SubResource("Animation_ir2o7"),
+"ninja_frog_fall_animation": SubResource("Animation_jxebj"),
+"ninja_frog_idle_animation": SubResource("Animation_clh64"),
+"ninja_frog_jump_animation": SubResource("Animation_udfl4"),
+"ninja_frog_run_animation": SubResource("Animation_4qwmj")
+}
+
+[node name="NinjaFrog" type="CharacterBody2D"]
+script = ExtResource("1_kql5y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_imamc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+sprite_frames = SubResource("SpriteFrames_1vs38")
+animation = &"Fall"
+script = SubResource("CSharpScript_tgkbx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 0
+limit_right = 1225
+limit_bottom = 670
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "ninja_frog_idle_animation"
+libraries = {
+"": SubResource("AnimationLibrary_3gg6p")
+}

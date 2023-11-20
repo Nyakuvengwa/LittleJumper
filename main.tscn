@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dekxrrxuf7dqx"]
+
+[ext_resource type="Script" path="res://main.cs" id="1_y6ex4"]
+[ext_resource type="PackedScene" uid="uid://ct50fu0wyksh4" path="res://BackGroundBlueTile.tscn" id="2_oo54l"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_y6ex4")
+
+[node name="PlayBtn" type="Button" parent="."]
+offset_left = 365.0
+offset_top = 168.0
+offset_right = 803.0
+offset_bottom = 349.0
+size_flags_horizontal = 4
+text = "PLAY"
+
+[node name="QuitBtn" type="Button" parent="."]
+offset_left = 371.0
+offset_top = 387.0
+offset_right = 809.0
+offset_bottom = 568.0
+size_flags_horizontal = 4
+text = "QUIT"
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_oo54l")]
+
+[connection signal="pressed" from="PlayBtn" to="." method="OnPlayBtnPressed"]
+[connection signal="pressed" from="QuitBtn" to="." method="OnQuitBtnPressed"]
